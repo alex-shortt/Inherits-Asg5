@@ -1,10 +1,9 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import javax.swing.JComponent;
+import javax.swing.*;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
-import javax.swing.JFrame;
 
 //Created by Aneesh Lodhavia and Alex Shortt
 
@@ -59,6 +58,8 @@ class ChartFrame extends JFrame
 
     public ChartFrame()
     {
+        JOptionPane.showMessageDialog(null, "Click below the current rectangles to make new ones. \nThe x position (left/right)" +
+                "of your click decides the height of each rectangle. \nClick on an existing rectangle to redefine its height.");
         scene = new ChartComponent();
         add(scene);
 
